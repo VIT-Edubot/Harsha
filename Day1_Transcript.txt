@@ -1,7 +1,0 @@
-Day 1:
-
-This HTML document defines a simple webpage for LaunchDarkly. It begins with the `<!DOCTYPE html>` declaration, indicating it is an HTML5 document, and sets the language to English. Inside the `<head>` section, it includes metadata such as character encoding (`UTF-8`) and viewport settings for responsiveness. The title of the page is set as "Welcome to LaunchDarkly."  
-
-Within the `<body>` section, the main content starts with an `<h1>` heading that welcomes users to LaunchDarkly. This is followed by an `<h2>` subheading introducing the company’s mission and values, along with a paragraph explaining how LaunchDarkly helps development teams release software faster and more confidently. Another `<h2>` subheading introduces the company’s core values, which are listed in an unordered list (`<ul>`) containing three key principles: Innovation, Collaboration, and User-First Mindset.  
-
-Further down, the document includes a hyperlink (`<a href="#">Learn more about LaunchDarkly</a>`) as a placeholder for additional information about LaunchDarkly. Additionally, an `<img>` tag is used to display a placeholder image (`https://via.placeholder.com/150`) representing the LaunchDarkly logo, with an alternative text description ("LaunchDarkly Logo"). Finally, the document is properly closed with `</body>` and `</html>` tags.
