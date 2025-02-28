@@ -1,0 +1,140 @@
+ /* Global Styles */
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #c2c8c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #7f3d0b;
+}
+
+h2{
+    font-weight: bold;
+    color: #1d166a;
+    margin-bottom: 20px;
+
+}
+.Overview{
+    font-weight: bold;
+    color: #7d1093;
+    margin-bottom: 20px;
+
+}
+.System{
+    font-weight: bold;
+    color: #384205;
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #0b1434;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #d9b27c;
+    font-size: 20px;
+}
+
+
+
+/* Feedback Form Container */
+#feedback-form {
+    background: white;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 19px;
+    color:#a72828;
+    font-size: 20px;
+    
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 500px;
+    color:#060606;
+    
+    
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Feature Overview Video & Audio Section */
+section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+video, audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #514141;
+    color: rgb(239, 234, 234);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #feedback-form {
+        width: 90%;
+    }
+}
