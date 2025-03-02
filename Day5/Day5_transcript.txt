@@ -1,0 +1,150 @@
+Transcipt Day 5:
+
+1) unable to link the js file with the html code like the form is not submitting when we click submit button
+
+If the JavaScript functionality is not working as expected, let's make sure that everything is properly set up. I'll provide a complete and thorough explanation on how to link the JavaScript file to the HTML file and debug any potential issues.
+
+Review of Steps
+Ensure both files are in the same directory: Make sure feedback.html and feedback.js are both in the same directory.
+
+Ensure proper linking of the JavaScript file in HTML: Place the <script> tag before the closing </body> tag in feedback.html.
+
+Ensure the form has a valid structure: Make sure the form elements have unique id attributes and are correctly referenced in the JavaScript.
+
+2)how to check errors in javascript
+
+To effectively check errors in JavaScript, you must utilize a systematic approach that helps you identify and resolve issues efficiently. Here’s a step-by-step guide to do so:
+
+Step-by-Step Instructions to Check Errors in JavaScript
+1. Use Browser Developer Tools
+Objective: Utilize the browser’s built-in tools to debug and find errors.
+Steps:
+Open your browser (Chrome, Firefox, Edge, etc.).
+Press F12 or right-click on the page and select “Inspect” to open Developer Tools.
+Navigate to the "Console" tab to see any error messages or logs.
+2. Console Logging
+Objective: Add console.log() statements to your code to print variable values and debug messages.
+Steps:
+Insert console.log() at various points in your code.
+Log the values of important variables and expressions.
+Check the console output to verify the correctness of values and program flow.
+3. Error Handling
+Objective: Use try...catch statements to handle exceptions and catch errors.
+Steps:
+Wrap suspicious code blocks with try...catch.
+In the catch block, log the error using console.error().
+Analyze the error message and stack trace to identify the source of the issue.
+4. Using debugger Statements
+Objective: Use debugger statements to pause code execution and inspect variables.
+Steps:
+Insert debugger at critical points in your code.
+Run your code with Developer Tools open.
+Execution will pause at the debugger statement, allowing you to inspect the current state and step through the code line by line.
+5. Check Network Requests
+Objective: Inspect network requests to ensure data is being sent and received correctly.
+Steps:
+In Developer Tools, go to the "Network" tab.
+Observe all network requests and responses while your code runs.
+Check for any failed requests or unexpected status codes/errors.
+6. Validate Syntax
+Objective: Ensure your code doesn't have syntax errors.
+Steps:
+Use an editor or IDE with linting capabilities (like VSCode, Sublime Text).
+Correct any syntax warnings or errors highlighted by the linter.
+Optionally, use tools like ESLint to enforce coding standards and catch potential errors early.
+7. Unit Testing
+Objective: Write unit tests to validate the functionality of individual components.
+Steps:
+Create unit tests using a JavaScript testing framework (like Jest, Mocha).
+Write tests for each function to ensure they perform as expected.
+Run the tests and fix any failures reported.
+8. Read Error Messages
+Objective: Carefully read error messages to understand the problem.
+Steps:
+Check the console for any error messages.
+Read the full error message, including the stack trace.
+Identify the file and line number where the error occurred.
+Understand the type of error (SyntaxError, TypeError, ReferenceError, etc.) and investigate accordingly.
+Summary of Best Practices
+Regularly use browser Developer Tools for real-time debugging.
+Rely on console.log() to track values and execution flow.
+Implement try...catch blocks to gracefully handle errors.
+Use debugger to pause execution and inspect the current state.
+Monitor network requests to ensure proper data flow.
+Maintain clean and syntax-error-free code with linters.
+Write and run unit tests to validate individual functions.
+Pay attention to error messages and stack traces for quick diagnostics.
+By following these steps, you will be able to systematically check and resolve errors in JavaScript, ensuring robust and error-free code.
+
+3)Assignment: JavaScript Basics at LaunchDarkly Scenario: You have been tasked with adding some basic interactive functionality to the LaunchDarkly employee portal, specifically focusing on the feedback form you previously created. You will use JavaScript to manage user input, validate form data, and display helpful messages or alerts when the form is submitted. This will involve using variables, operators, and basic debugging techniques to ensure the code works smoothly. ________________________________________ Assignment Tasks: 1. Create a New JavaScript File: o Create a new JavaScript file named feedback.js and link it to your feedback_form.html by adding the <script> tag just before the closing </body> tag in the HTML document. 2. Declare and Use Variables: o In the feedback.js file, declare three variables using var, let, and const to store:  The name of the user (String)  The email of the user (String)  A boolean value representing whether the user is satisfied with the product (Boolean) 3. Basic Operators and Expressions: o Write a function that calculates the total score of a user based on their ratings for different features (use a simple example with 3 features, each rated between 1 and 5). o Use basic arithmetic operators to calculate the average score. o Display the result of the calculation in the console using console.log(). 4. Form Validation with JavaScript: o Write a basic JavaScript function that:  Checks if the name input field is empty. If it is, display an error message in the console.  Ensures the email is in the correct format (simple check for "@" symbol). If not, display an error message in the console. 5. Introduction to console.log() and Debugging: o Use console.log() statements to debug the values of variables and expressions as you develop the code. Make sure you are printing meaningful information, such as:  The values of userName, userEmail, and isSatisfied.  The total score of the user calculated from the form input. o Ensure that any errors in form validation are logged clearly in the console. 6. Debugging Basics: o Open the browser's developer tools (press F12) and navigate to the "Console" tab to see the output of your console.log() statements. o Identify any errors that occur when running the script and fix them. For example, if a variable is incorrectly referenced or a function is not working as expected, use the console to find out what's wrong and correct it. 7. Submit Button Functionality: o Attach the validateForm() function to the form’s submit button so that when the form is submitted, it runs the validation checks. You can either use addEventListener() or the onsubmit attribute to trigger the validation.
+
+
+Sure! Let's break down the question further and elaborate on the specific functionality needed.
+
+Input and Output Details
+Input:
+User Name: The name entered by the user in the feedback form.
+User Email: The email entered by the user in the feedback form.
+User Satisfaction (Boolean): A checkbox or radio button indicating whether the user is satisfied with the product.
+Feature Ratings: Ratings for three different features (each between 1 and 5), which could be input fields in the form.
+Output:
+Total User Score: Calculated total score based on the feature ratings, displayed in the console.
+Average User Score: Calculated average score based on the feature ratings, displayed in the console.
+Validation Messages: Errors or validation messages related to the form inputs, displayed in the console.
+Debugging Information: Various values (e.g., userName, userEmail, isSatisfied) logged to the console for debugging purposes.
+Specific Functionality
+Here are the detailed functionalities that need to be implemented:
+
+1. Creating and Linking the JavaScript File
+Create a file named feedback.js.
+Link this file to the HTML form (feedback_form.html) using the <script> tag placed just before the closing </body> tag.
+2. Declaring and Using Variables
+Create three variables in feedback.js:
+User Name: Use var to declare this variable.
+User Email: Use let to declare this variable.
+User Satisfaction: Use const to store the boolean result of user satisfaction.
+3. Basic Arithmetic Operations
+Write a function to calculate the total and average scores:
+Take ratings for three features (each rated between 1 and 5).
+Use basic arithmetic operators (+, /) to compute the total and average scores.
+Output the results using console.log().
+4. Form Validation
+Write a function validateForm() to perform the following checks:
+Empty Name Field: If the name input field is empty, log an error message to the console.
+Email Format: Ensure the email contains an "@" symbol. If not, log an error message to the console.
+5. Debugging Using console.log()
+Use console.log() statements to print out:
+Values of userName, userEmail, and isSatisfied.
+Calculated scores.
+Validation errors if any.
+6. Using Browser's Developer Tools
+Open the browser’s developer tools (F12) and check the console output for:
+Debugging values.
+Validation error messages.
+Any code errors encountered during script execution.
+7. Submit Button Functionality
+Attach the validateForm() function to the form’s submit action. This can be done by:
+Adding an eventListener to the submit button.
+Using the onsubmit attribute in the HTML form element to trigger validation.
+Steps to Implement Functionality
+Setup the environment:
+
+Ensure the HTML form (feedback_form.html) is structured correctly with input fields for name, email, feature ratings, and satisfaction checkbox.
+Link the JavaScript:
+
+Add the <script> tag to link feedback.js in the HTML file just before the </body> tag.
+Declare Variables:
+
+In feedback.js, declare and initialize the required variables using var, let, and const.
+Create Functions:
+
+Create a function for calculating total and average scores.
+Create the validateForm() function that will check the form inputs and log errors.
+Add Event Listeners:
+
+Attach the validateForm() function to the form's submit button using addEventListener or the onsubmit attribute.
+Debugging:
+
+Use console.log() to print out variables and any error messages.
+Open the browser’s developer tools to view and fix any issues.
+By implementing the above steps, you will ensure that the feedback form in the LaunchDarkly employee portal has basic interactive functionality with proper input validation and meaningful debug information.

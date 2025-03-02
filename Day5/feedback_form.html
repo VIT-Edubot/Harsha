@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Feedback Form</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form Section -->
+    <section>
+        <article>
+            <h2>Provide Your Feedback</h2>
+            <br>
+            <form id="feedbackForm" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label>Are you satisfied with the recent updates?</label>
+                <br>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="satisfaction" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="no" name="satisfaction" value="no">
+                    <label for="no">No</label>
+                </div>
+                <br><br>
+
+                <label for="feature">Preferred Feature:</label>
+                <select id="feature" name="feature">
+                    <option value="select">Select the feature</option>
+                    <option value="Feature_a">Feature A</option>
+                    <option value="Feature_b">Feature B</option>
+                    <option value="Feature_c">Feature C</option>
+                </select>
+                <br><br>
+
+                <!-- Feature Ratings -->
+                <label>Rate the Features (1-5):</label>
+                <br>
+
+                <label for="feature1">Feature A:</label>
+                <input type="number" id="feature1" name="feature1">
+                <br><br>
+
+                <label for="feature2">Feature B:</label>
+                <input type="number" id="feature2" name="feature2">
+                <br><br>
+
+                <label for="feature3">Feature C:</label>
+                <input type="number" id="feature3" name="feature3">
+                <br><br>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+            <p id="successMessage" style="display: none; color: green; font-weight: bold;">
+    Thank you for your feedback! Your response has been submitted successfully.
+</p>
+          
+        </article>
+    </section>
+
+    <!-- Feature Overview Video Section -->
+    <section>
+        <article>
+            <h2 class="Overview">Feature Overview Video</h2>
+            <video width="320" height="240" controls>
+                <source src="https://via.placeholder.com/150" type="video/mp4">
+            </video>
+        </article>
+    </section>
+
+    <!-- System Update Sound Section -->
+    <section>
+        <article>
+            <h2 class="System">System Update Sound</h2>
+            <audio controls>
+                <source src="https://via.placeholder.com/150" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+  
+    <!-- Link to feedback.js just before closing </body> tag -->
+    <script src="script.js"></script>
+</body>
+</html>
