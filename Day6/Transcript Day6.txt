@@ -1,0 +1,67 @@
+Transcript Day6:
+
+Assignment Tasks: 1. Create a Basic JavaScript Function to Handle Form Submission: o Write a function submitFeedback() that is called when the user submits the feedback form. o Inside the submitFeedback() function, check if the form inputs are valid using conditional statements. For example:  If the name is empty, show an alert or console message.  If the email is not valid (check if it contains an "@" symbol), show an alert.  If the feedback score is not in the range 1-5, show an alert. 2. Using Loops to Display Multiple Feedback Ratings: o Assume you have an array of feedback scores. Use a loop (for, while, or forEach) to display each feedback score in the console. o Example: If you have an array of scores like [5, 4, 3, 5, 2], you will loop through the array and display each score in the console. 3. Using Loops for Dynamic Form Field Validation: o If there are multiple form fields (such as text fields, radio buttons, checkboxes), you can use a loop to validate them. o Create a function validateFields() that loops through each form input and validates whether the required fields are filled. If not, display a warning message. 4. Handling DOM Events: o Attach an event listener to the submit button of the form. When the form is submitted, it should call the submitFeedback() function you wrote earlier. Use the addEventListener() method to handle the form submit event. o Additionally, add an event listener to the reset button to clear the form fields when clicked. 5. Advanced: Handle a Dynamic Feedback Rating System: o Create a dynamic rating system where a user can select a rating using radio buttons (1 to 5). o Write a function handleRatingChange() that listens for changes in the rating field. When the user selects a rating, the function should display a message like: "Thank you for rating us: [selected rating]".
+
+Approach:
+
+Problem Breakdown and Optimized Approach
+1. Basic JavaScript Function to Handle Form Submission:
+
+Define submitFeedback():
+Triggered on form submission.
+Validate form inputs using conditional statements:
+Check if the name field is empty and display an alert if true.
+Validate email by ensuring it contains the "@" symbol; show an alert if invalid.
+Validate feedback score to ensure it's within the range 1-5; show an alert if invalid.
+2. Loop to Display Multiple Feedback Ratings:
+
+Assume an array of feedback scores:
+Use a loop (for, while, or forEach) to iterate over the array.
+Print each score to the console.
+3. Dynamic Form Field Validation with Loops:
+
+Create validateFields():
+Loop through each form input to check if required fields are filled.
+Display warning messages for unfilled required fields.
+4. Handling DOM Events:
+
+Attach event listeners:
+Use addEventListener() to attach the submit event to call submitFeedback().
+Use addEventListener() to attach the reset event to clear form fields.
+5. Advanced Dynamic Feedback Rating System:
+
+Implement handleRatingChange():
+Listen for changes in the rating field via event listeners on radio buttons.
+Display a message indicating the selected rating, e.g., "Thank you for rating us: [selected rating]".
+Step-by-Step Solution
+Create submitFeedback() function
+
+Ensure this function is triggered on form submission.
+Inside submitFeedback(), implement checks:
+If the name field is empty, alert the user.
+Validate the email format by checking for the presence of "@".
+Ensure the feedback score is between 1 and 5; alert if out of range.
+Use Loops for Displaying Feedback Scores
+
+Assume an array, e.g., let scores = [5, 4, 3, 5, 2].
+Loop through the array using:
+for loop,
+while loop,
+forEach method.
+Print each score to the console.
+Validate Multiple Form Fields
+
+Define validateFields() function:
+Loop through each form input.
+If required fields are not filled, display warning messages.
+Attach Event Listeners for Form Interaction
+
+Use addEventListener() for:
+Submitting the form, calling submitFeedback().
+Resetting the form fields on reset button click.
+Handle Dynamic Feedback Rating System
+
+Define handleRatingChange() function:
+Attach event listeners to radio button fields.
+Display a thank you message based on the selected rating.
+By following these steps, you'll be able to create a functional and robust form handling mechanism in JavaScript that covers validation, feedback display, event handling, and dynamic rating system.

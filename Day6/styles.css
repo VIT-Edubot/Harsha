@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #c2c8c9;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+    color: #7f3d0b;
+    padding: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #1d166a;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.Overview {
+    font-weight: bold;
+    color: #7d1093;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.System {
+    font-weight: bold;
+    color: #384205;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #0b1434;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: #d9b27c;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Feedback Form Container */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+#feedback-form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    color: #a72828;
+    font-size: 20px;
+    padding: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    color: #060606;
+    margin-bottom: 10px;
+}
+
+button {
+    align-self: center;
+    width: 50%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top:20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Feature Overview Video & Audio Section */
+video, audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #514141;
+    color: rgb(239, 234, 234);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* Default for large screens */
+#feedback-form {
+    display: flex;
+}
+
+/* for small screens */
+@media (max-width: 767px) {
+    #feedback-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+    #feedback-form {
+        display: block;
+        padding: 25px;
+    }
+}
+#ratingMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745; 
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f0f8f0; 
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+#ratingContainer {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+#ratingContainer input[type="radio"] {
+    margin: 5px;
+    margin-top: 20px;
+}
