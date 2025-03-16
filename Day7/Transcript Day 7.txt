@@ -1,0 +1,50 @@
+Transcript Day 7:
+
+ 1) 1. Create and Display Employee Data (Arrays and Objects): o Define an array of objects, each representing an employee with the following details:  id (unique identifier)  name  position  department  isActive (a boolean indicating whether the employee is currently active) 2. Display Employee Information on the Web Page (Basic DOM Manipulation): o Create an HTML structure to display the employee data dynamically. For each employee object in the array, create a div element that contains the employee’s name, position, and department. Additionally, display whether the employee is active or inactive. o Use JavaScript to loop through the employee array and create HTML elements for each employee, appending them to the employee-list div. 3. Filter Active Employees (Higher-Order Functions - filter): o Use the filter() higher-order function to display only active employees. Modify the employee list to only show those employees who have the isActive property set to true. 4. Sort Employees by Name (Higher-Order Functions - sort): o Use the sort() higher-order function to sort the employees by their names in alphabetical order. After sorting, display the employee list sorted by name. 5. Map Employee Names to a New Array (Higher-Order Functions - map): o Use the map() function to create a new array of employee names and display it in the console. 6. Bonus: Update Employee Status (Basic DOM Manipulation with Events): o Add a button next to each employee’s status that allows the user to toggle their active/inactive status. When the button is clicked, the employee’s isActive property should be toggled, and the status should be updated in the DOM.
+
+
+Optimized Approach for Assignment Tasks
+Create and Display Employee Data (Arrays and Objects)
+
+Define an array of objects, where each object represents an employee and contains properties: id, name, position, department, and isActive.
+Ensure that the id is unique for each employee for identification purposes.
+Display Employee Information on the Web Page (Basic DOM Manipulation)
+
+Create an HTML structure with a div (e.g., employee-list) that will contain all employee data.
+Use JavaScript to iterate through the employee array. For each employee:
+Create a div element to hold the data.
+Populate the div with the employee’s name, position, and department.
+Indicate whether the employee is active or inactive.
+Append each populated div element to the employee-list div.
+Filter Active Employees (Higher-Order Functions - filter)
+
+Use the filter() function to create a new array containing only employees with the isActive property set to true.
+Clear the existing employee list in the DOM.
+Loop through the filtered array and update the DOM accordingly to display only active employees.
+Sort Employees by Name (Higher-Order Functions - sort)
+
+Use the sort() function on the employee array, sorting objects by the name property in alphabetical order.
+Clear the existing employee list in the DOM.
+Loop through the sorted array and update the DOM with employees sorted by name.
+Map Employee Names to a New Array (Higher-Order Functions - map)
+
+Use the map() function to transform the employee array into a new array containing only employee names.
+Utilize console.log to display the resulting array of employee names.
+Bonus: Update Employee Status (Basic DOM Manipulation with Events)
+
+Add a button next to each employee’s status within the employee div.
+Attach an event listener to the button, which will handle clicks to toggle the isActive status of the employee.
+Upon toggling, update the employee’s status in the DOM and in the array.
+Optionally, reapply filtering if needed to only show active employees.
+
+
+2) best button color for this #e0fbfc back ground color
+
+For a background color of #e0fbfc (a light cyan), the best button colors should provide good contrast while maintaining a visually appealing aesthetic. Here are some great choices:
+
+Dark Teal (#005f6b) – Strong contrast and professional look
+Deep Navy (#00274d) – Elegant and high contrast
+Warm Coral (#ff6b6b) – Vibrant and eye-catching
+Golden Yellow (#f4a261) – Cheerful and inviting
+Rich Purple (#6a0572) – Bold and modern
+For text on the button, use white (#ffffff) or light gray (#f1f1f1) for dark buttons, and dark gray (#333333) for lighter buttons.

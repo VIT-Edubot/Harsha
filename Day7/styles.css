@@ -1,0 +1,59 @@
+body {
+    text-align:center;
+    background-color:#e0fbfc;
+}
+
+h1 {
+    color: #e22c10;
+    font-size: 28px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #005f6b;
+    color: rgb(231, 231, 248);
+    border: none;
+    padding: 5px 21px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 13px;
+    
+   
+}
+
+button:hover {
+    background-color: #db6e0f;
+    transform: scale(1.05);
+}
+
+.status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#employee-list{
+    color: #293241;
+    font-size:small;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+.tog{
+    background-color: #005f6b;
+    color: rgb(231, 231, 248);
+    border: none;
+    padding: 5px 21px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 13px;
+}
