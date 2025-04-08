@@ -1,0 +1,18 @@
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family:calibri;
+  background-color: #ECF0F1;
+  color: #2D3436;
+}
+
+h1, h2 {
+  text-align: center;
+  
+}
