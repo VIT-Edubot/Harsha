@@ -1,0 +1,19 @@
+.employee-card {
+    background-color: rgb(12, 201, 192);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color:rgb(20, 19, 19);
+    border-width: 2px;
+    border-color: black;
+  }
+  .employee-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    transform: translateX(-6px);
+    transform: scale(1.05);
+
+  }
+  
