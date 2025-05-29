@@ -1,0 +1,104 @@
+/* Ensure full height for body and root container */
+html, body {
+  body {
+  margin: 0;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6; /* light gray background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Light & Dark backgrounds */
+body {
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e2f;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #333333;
+  transition: background-color 400ms ease, color 400ms ease;
+  
+}
+
+
+.dashboard.dark {
+  background-color: #2c2c3e;
+  color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+
+
+.label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  border: solid #ccc 1px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+}
+
+
+.dashboard.dark input[type="text"] {
+  background-color: #3e3e50;
+  color: white;
+  border: 1px solid #555;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ec800d;
+  color: rgb(17, 17, 17);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #08e5ae;
+}
+
+
+
+
+.inactive-msg {
+  color: #ff6b6b;
+  font-style: italic;
+  margin-top: 8px;
+;
+}
