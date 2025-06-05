@@ -1,0 +1,7 @@
+Day 12 Readme:
+
+In this assignment, I used the useEffect hook to manage data fetching and handle side effects in the React component. The main goal was to fetch a list of users from a mock API when the UserList component first mounts. Inside useEffect, I created a timeout to simulate an asynchronous API call and then updated the state with the mock user data using setUsers. To prevent memory leaks, I also cleared the timeout when the component unmounted.
+
+For the side effect, I implemented a timer using setInterval inside another useEffect hook. This timer updates the browser’s document title every 5 seconds to show how many users were fetched. This demonstrates how React can interact with things outside of the component like the document title. I also made sure to clean up this interval using clearInterval in the return function of the useEffect to avoid unnecessary intervals running in the background.
+
+One challenge I faced was making sure that side effects like the timer and data fetch didn't run repeatedly or cause errors when the component re-renders. I solved this by providing the correct dependency arrays in the useEffect calls so that they only execute when the component mounts or when necessary. I also had to ensure the cleanup functions were correctly placed to prevent memory leaks. Overall, this helped me understand how to manage side effects in a React app effectively.

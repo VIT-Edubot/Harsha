@@ -1,0 +1,217 @@
+Day12 Transcript:
+
+Assignment: Managing Side Effects with useEffect at LaunchDarkly
+Scenario: At LaunchDarkly, you're working on a dashboard that displays a list of active users. The data for the users is fetched from an API, and you need to handle this using useEffect. In addition, you need to handle side effects such as setting up timers or event listeners, and cleaning them up when the component is unmounted.
+Your task is to create a component that:
+1.	Fetches user data from a mock API when the component mounts.
+2.	Displays a loading state while the data is being fetched.
+3.	Updates the state with the fetched data and displays it in the UI.
+4.	Uses useEffect to fetch the data only when the component is first mounted.
+________________________________________
+Assignment Tasks:
+1.	Set Up Your React Project:
+o	If you haven't already, set up your React project using Vite:
+npm create vite@latest react-user-dashboard --template react
+cd react-user-dashboard
+npm install
+npm run dev
+2.	Create a Component for Fetching Data:
+o	Create a new component called UserList that will:
+	Fetch user data from an API endpoint using useEffect.
+	Display a loading message until the data is fetched.
+	Display the user data once it's successfully loaded.
+3.	Handle Side Effects (Timers or Event Listeners):
+o	Add a timer in the UserList component that updates the document's title to show the number of users fetched every 5 seconds, but make sure to clean it up when the component unmounts.
+o	Use useEffect for this side effect and cleanup.
+4.	Bonus (Optional):
+o	Add a search functionality to filter the list of users by name. You can create a search input field and filter the displayed users by their name as the user types.
+5.	Styling the Component:
+o	Add basic styling for the user list and the search input field. Make sure the loading state and error messages are clearly visible and distinct from the content.
+________________________________________
+Submission:
+Submit the following files:
+1.	src/App.jsx: The main file where you initialize and render the UserList component.
+2.	src/UserList.jsx: The component that fetches and displays user data using useEffect.
+3.	src/styles.css: The file containing the styles for the component.
+4.	README.md: A brief explanation of your approach:
+o	How did you use useEffect for data fetching?
+o	How did you handle side effects (such as the timer) with useEffect?
+o	What challenges did you face and how did you solve them?
+________________________________________
+Learning Outcomes:
+By completing this assignment, you will:
+•	Learn how to use the useEffect hook to handle side effects such as data fetching and timers.
+•	Gain experience in managing asynchronous data in React and displaying it dynamically.
+•	Understand how to clean up side effects when a component unmounts to avoid memory leaks.
+•	Improve your skills in managing state and side effects, which are essential for building interactive and performant applications at LaunchDarkly.
+
+
+Assignment: Managing Side Effects with useEffect at LaunchDarkly
+Scenario: At LaunchDarkly, you're working on a dashboard that displays a list of active users. The data for the users is fetched from an API, and you need to handle this using useEffect. In addition, you need to handle side effects such as setting up timers or event listeners, and cleaning them up when the component is unmounted.
+Your task is to create a component that:
+1.	Fetches user data from a mock API when the component mounts.
+2.	Displays a loading state while the data is being fetched.
+3.	Updates the state with the fetched data and displays it in the UI.
+4.	Uses useEffect to fetch the data only when the component is first mounted.
+________________________________________
+Assignment Tasks:
+1.	Set Up Your React Project:
+o	If you haven't already, set up your React project using Vite:
+npm create vite@latest react-user-dashboard --template react
+cd react-user-dashboard
+npm install
+npm run dev
+2.	Create a Component for Fetching Data:
+o	Create a new component called UserList that will:
+	Fetch user data from an API endpoint using useEffect.
+	Display a loading message until the data is fetched.
+	Display the user data once it's successfully loaded.
+3.	Handle Side Effects (Timers or Event Listeners):
+o	Add a timer in the UserList component that updates the document's title to show the number of users fetched every 5 seconds, but make sure to clean it up when the component unmounts.
+o	Use useEffect for this side effect and cleanup.
+4.	Bonus (Optional):
+o	Add a search functionality to filter the list of users by name. You can create a search input field and filter the displayed users by their name as the user types.
+5.	Styling the Component:
+o	Add basic styling for the user list and the search input field. Make sure the loading state and error messages are clearly visible and distinct from the content.
+________________________________________
+Submission:
+Submit the following files:
+1.	src/App.jsx: The main file where you initialize and render the UserList component.
+2.	src/UserList.jsx: The component that fetches and displays user data using useEffect.
+3.	src/styles.css: The file containing the styles for the component.
+4.	README.md: A brief explanation of your approach:
+o	How did you use useEffect for data fetching?
+o	How did you handle side effects (such as the timer) with useEffect?
+o	What challenges did you face and how did you solve them?
+________________________________________
+Learning Outcomes:
+By completing this assignment, you will:
+•	Learn how to use the useEffect hook to handle side effects such as data fetching and timers.
+•	Gain experience in managing asynchronous data in React and displaying it dynamically.
+•	Understand how to clean up side effects when a component unmounts to avoid memory leaks.
+•	Improve your skills in managing state and side effects, which are essential for building interactive and performant applications at LaunchDarkly.
+
+Sure! Here’s a step-by-step approach to solve the given problem using useEffect in React:
+
+1. Set Up Your React Project
+Follow these commands to initialize your React project using Vite:
+
+Create the project:
+bash
+Copy Code
+
+
+npm create vite@latest react-user-dashboard --template react
+Navigate to the project directory and install dependencies:
+bash
+Copy Code
+
+
+cd react-user-dashboard
+npm install
+Start the development server:
+bash
+Copy Code
+
+
+npm run dev
+2. Create a Component for Fetching Data
+Create UserList Component:
+Create the component file: Create a file named UserList.jsx in the src directory.
+State for managing data and loading: Inside UserList, define states for loading, user data, and any potential error.
+useEffect for data fetching: Use useEffect to fetch user data from the mock API when the component is first mounted.
+Display a loading message while fetching.
+Update the state with fetched data and stop displaying the loading message once the data is successfully fetched.
+3. Handle Side Effects (Timers or Event Listeners)
+Timer to update document title:
+Setup the timer inside useEffect:
+Use a timer to update the document’s title every 5 seconds with the number of fetched users.
+Cleanup function:
+Ensure proper cleanup of the timer when the component unmounts to avoid memory leaks.
+4. Bonus (Search Functionality)
+Create a search input field:
+Add an input field in UserList for searching users by name.
+Filter functionality:
+As the user types in the search input, filter the list of users based on the input value and display the matching users.
+5. Styling the Component
+Basic Styling:
+Create a styles.css file: Add basic styles for the user list, search input field, loading state, and error messages.
+Apply styles: Ensure that these styles are applied to respective elements in UserList.
+Submission
+Files to Submit:
+src/App.jsx:
+Initialize and render UserList component.
+src/UserList.jsx:
+The main component that fetches and displays user data using useEffect.
+src/styles.css:
+Style definitions for the component.
+README.md:
+Brief explanation of the approach:
+Describe how useEffect was used for data fetching.
+Explain handling of side effects like the timer with useEffect.
+Discuss any challenges faced and how they were solved.
+README.md Content Example
+How did you use useEffect for data fetching?
+
+Use useEffect hook with an empty dependency array to run data fetching only on component mount.
+Inside useEffect, perform asynchronous fetch call and update state upon receiving data.
+How did you handle side effects (such as the timer) with useEffect?
+
+Use useEffect for setting up the timer.
+Include a cleanup function to clear the timer on component unmount.
+Challenges faced and solutions:
+
+Managing asynchronous data fetching without blocking UI rendering: Solved using loading state.
+Ensuring proper cleanup of side effects: Addressed using cleanup functions in useEffect.
+Learning Outcomes
+By completing this assignment, you will:
+
+Learn useEffect for managing side effects:
+Data fetching and setting timers.
+Experience with asynchronous data handling:
+Fetching data and updating UI dynamically.
+Understand side effect cleanup:
+Avoid memory leaks with proper cleanup.
+Improve state and side effect management skills:
+Essential for building robust interactive applications at LaunchDarkly.
+Feel free to reach out if you have any specific questions or need further clarification on any step!
+
+
+Q.in css styling
+
+
+E
+Absolutely! Here are some improvements and detailed steps specifically focused on CSS styling for your React component:
+
+CSS Styling
+Create a Scoped CSS File
+Create a styles.module.css file:
+Using CSS Modules will help prevent unintended style conflicts by scoping styles to the component.
+1. Create the styles.module.css File
+In the src directory, create a styles.module.css file. Add the following styles:
+By using styles.module.css, we ensure that CSS is scoped to the UserList component, reducing the risk of conflicts and making it easier to manage styles.
+
+Improving CSS Styling
+General Design Tips:
+Color scheme:
+
+Use a consistent color scheme that complements the rest of your application and enhances readability.
+Responsive design:
+
+Ensure the component's styles are responsive, using flexible units like percentages or viewport widths.
+Add media queries if necessary to adjust styles on different screen sizes.
+Spacing and layout:
+
+Use consistent spacing, margins, and padding for a clean layout.
+Utilize flexbox or grid layout for more complex designs.
+Visual hierarchy:
+
+Differentiate between primary and secondary elements (e.g., loading messages vs. user item list) using font sizes, weights, and colors.
+Additional Styling Example
+To further enhance the visual appeal, you may want to add additional styles or refine existing ones. Here’s an update to styles.module.css for better interaction and layout:
+Improving Experience with CSS Modules:
+CSS Modules help in maintaining scoped styles to the specific component they are applied to, thus preventing global scope pollution. They also help in organizing styles for better readability and maintainability.
+
+By following these detailed steps and tips, your component will be visually appealing, responsive, and well-structured.
+
+Feel free to ask if you need further clarification or assistance!
