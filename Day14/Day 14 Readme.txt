@@ -1,0 +1,13 @@
+Day 14 Readme:
+
+This React assignment demonstrates how I effectively used the useRef, useEffect, and a custom useWatch hook to manage state, track changes, and manipulate the DOM in a functional and elegant way. The assignment focuses on building an input form that responds dynamically to user input, persists values across renders, and monitors specific value changes through custom logic.
+
+I utilized the useRef hook in two main contexts. In the NameForm component, I used it to persist the initial value of the input field without triggering re-renders. This was particularly useful when the original state needed to be retained for comparison or display purposes even after multiple updates. In the FocusInput component, I also used useRef to directly access the DOM element of the input field. By attaching the reference to the input, I enabled a button to programmatically focus the input field, demonstrating direct DOM manipulation in React.
+
+To implement a custom watch-like behavior, I employed the useEffect hook in the WatchEffect component. It listens for changes in the input field’s state and logs the updated value to the console whenever the user modifies the input. This pattern allowed me to execute side effects in response to dynamic state changes, showcasing how useEffect can help manage reactivity in components.
+
+I further enhanced the assignment by implementing a custom hook called useWatch, which I used in the WatchInput component. This hook tracks changes in a specific state variable and returns the latest updated value. Internally, it uses both useEffect and useRef—the former to detect updates and the latter to store the previous value. This approach allowed me to observe precise changes in input state without introducing extra logic into the main component.
+
+Styling for the entire assignment is managed through a central styles.css file. I applied clean and elegant visual styling, with centered content, spacious input elements, and accessible buttons. The App.jsx file serves as the main component that brings together all the individual parts—form input, state tracking, custom hook functionality, and DOM manipulation—each clearly presented in its own section.
+
+Overall, this assignment helped me strengthen my understanding of React’s core hooks. I learned how to persist values using useRef without causing re-renders, how to react to state changes using useEffect, and how to design a modular custom hook like useWatch to track specific values. Additionally, I gained hands-on experience in interacting with the DOM in a controlled and React-compliant way. This assignment reflects a practical application of React hooks and highlights my ability to build responsive, state-aware user interfaces.
